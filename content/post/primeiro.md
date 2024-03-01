@@ -1,10 +1,5 @@
 ---
 title: Meu Primeiro Post
-date: 2024-03-01
-description: A primeira postagem do blog após o deploy!
-tags:
-  - first
-author: Eu
 ---
 # Oi
 
