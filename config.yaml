@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: https://brantes.netlify.app
 title: Brantes
 paginate: 5
 theme: "hugo-PaperMod"
