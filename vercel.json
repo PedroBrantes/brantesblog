@@ -1,15 +1,7 @@
 {
   "build": {
-    "command": "hugo",
-    "publish": "public",
     "env": {
       "HUGO_VERSION": "0.123.6"
     }
-  },
-  "functions": {},
-  "routes": [],
-  "env": {
-    "HUGO_ENV": "production"
-  },
-  "regions": []
+  }
 }
