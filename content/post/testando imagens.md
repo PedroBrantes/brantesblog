@@ -5,4 +5,4 @@ tags:
   - imagens
 author: Eu
 ---
-![imagem](assets/img/4f257d2a-e3a3-4d3e-a139-f2b6d0b408b1.webp)
+![imagem](../../static/img/4f257d2a-e3a3-4d3e-a139-f2b6d0b408b1.webp)
