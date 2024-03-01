@@ -1,6 +1,8 @@
 ---
 title: Meu Primeiro Post
 date: 2024-03-01 14:14:21 -03:00:00
+tags:
+  - first
 ---
 # Oi
 
