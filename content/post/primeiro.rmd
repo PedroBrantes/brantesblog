@@ -1,10 +1,6 @@
 ---
-title: meu primeiro post
-date: 2024-03-01 14:35:31 -03:00
-description: A minha primeira postagem depois do deploy
-tags:
-  - first
-author: Eu
+title: Meu Primeiro Post
+date: 2024-03-01 14:14:20 -03:00:00
 ---
 # Oi
 
