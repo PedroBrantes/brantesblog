@@ -5,5 +5,11 @@ description: Novo Post
 tags:
   - first
   - second
-author: Eu
+author: Brantes
+cover:
+  image: "../../../img/"
+  alt: "thumb do post"
+  caption: <text>
+  relative: false
+  hidden: false
 ---

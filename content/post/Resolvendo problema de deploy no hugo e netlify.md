@@ -1,8 +1,8 @@
 ---
 title: Resolvendo problema de deploy no hugo e netlify
-date: 2024-03-01 20:39:46 -03:00
+date: 2024-03-01T20:39:46-03:00
 description: "Command failed with exit code 1: hugo (https://ntl.fyi/exit-code-1)"
-author: Eu
+author: Brantes
 tags:
   - blogdown
   - netlify
@@ -11,6 +11,12 @@ tags:
   - rmarkdown
   - r
   - hugo
+cover:
+  image: "../../../img/Resolvendo%20problema.png"
+  alt: "thumb do post"
+  caption: <text>
+  relative: false
+  hidden: false
 ---
 # Como Foi o Dia
 
@@ -102,6 +108,6 @@ Enfim, espero que este artigo/blog tenha sido útil em algum nível. Abaixo, vou
 
 - [github.com](https://github.com/rstudio/blogdown/issues/45)
 - [bookdown.org](https://bookdown.org)
-    - [static-files](https://bookdown.org/yihui/blogdown/static-files.html)
-    - [html](https://bookdown.org/yihui/blogdown/html.html)
-    - [other-themes](https://bookdown.org/yihui/blogdown)
+  - [static-files](https://bookdown.org/yihui/blogdown/static-files.html)
+  - [html](https://bookdown.org/yihui/blogdown/html.html)
+  - [other-themes](https://bookdown.org/yihui/blogdown)
