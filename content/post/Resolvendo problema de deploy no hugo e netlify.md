@@ -81,20 +81,20 @@ Alterando para `baseurl: https://brantes.netlify.app` e realizando push para o r
 
 Esta simples mudança também foi útil para definir onde os arquivos de mídia seriam armazenados no meu **workflow** que montei pelo ``Obsidian`` para criar os posts. Segue o exemplo:
 
-![](../../../img/Pasted%20image%2020240301214848.png)
+![exemplo obsidian](../../../img/Pasted%20image%2020240301214848.png)
 
 Todos os arquivos que estão na pasta `/static` são movidos para a raiz `/public` ao fazer o deploy. Então, eu defini para que o ``Obsidian`` já armazenasse qualquer arquivo na pasta `/public/img`:
 
-![](../../../img/Pasted%20image%2020240301220312.png)
+![exemplo obsidian 2](../../../img/Pasted%20image%2020240301220312.png)
 
 Assim, eu apenas preciso referenciar por níveis `../`. Cada `../` representa um subdiretório ou pasta anterior/superior. Como a minha pasta de `/content/post` se transforma em `/Post` após o deploy, os links podem ser referenciados assim:
 
 ```
-![](../../../img/Pasted%20image%2020240301214848.png)
+![alt](../../../img/Pasted%20image%2020240301214848.png)
 ```
 
 Também é preciso desativar os Wikilinks do Obsidian, pois não são suportados pelo Hugo:
-![](../../../img/Pasted%20image%2020240301220810.png)
+![desativar wikilinks obsidian](../../../img/Pasted%20image%2020240301220810.png)
 
 Enfim, espero que este artigo/blog tenha sido útil em algum nível. Abaixo, vou deixar links para discussões e documentações que me ajudaram.
 
