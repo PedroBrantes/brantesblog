@@ -4,6 +4,8 @@ paginate: 5
 theme: "hugo-PaperMod"
 DefaultContentLanguage: "pt"
 
+math: true
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -48,7 +50,7 @@ params:
     - post
     - docs
   displayFullLangName: true
-  
+
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true

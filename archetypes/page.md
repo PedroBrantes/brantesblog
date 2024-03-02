@@ -23,8 +23,8 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-  image: "../../../img/"
-  alt: "thumb do post"
+  image: ../../../img/
+  alt: thumb do post
   caption: <text>
   relative: false
   hidden: false
@@ -32,4 +32,5 @@ editPost:
   URL: https://github.com/pedrobrantes/brantesblog/tree/master/content
   Text: Sugerir Mudanças
   appendFilePath: true
+math: true
 ---

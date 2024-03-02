@@ -1,0 +1,6 @@
+.giscus_comments {
+    background-color: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 10px 10px 3px;
+    border: 1px solid var(--border);
+}

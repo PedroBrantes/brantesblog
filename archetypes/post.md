@@ -7,9 +7,10 @@ tags:
   - second
 author: Brantes
 cover:
-  image: "../../../img/"
-  alt: "thumb do post"
+  image: ../../../img/
+  alt: thumb do post
   caption: <text>
   relative: false
   hidden: false
+math: true
 ---
