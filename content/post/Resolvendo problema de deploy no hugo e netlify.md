@@ -16,85 +16,48 @@ tags:
 
 Hoje passei lendo documentação sobre o [blogdown](https://github.com/rstudio/blogdown) para resolver um problema "bobo" de deploy, pois o `netlify` estava apresentando um erro de sintaxe no HTML que é renderizado pelo `hugo` (Gerador de sites estáticos). Ao fazer a depuração, imaginei que o problema estava relacionado à conversão de arquivos markdown `(.md | .markdown)` para HTML. Cheguei até a pensar que fosse o R Markdown que é renderizado pela função `blogdown::build_dir()`, que também chama `rmarkdown::render()` e faz a conversão para arquivos MD. Segue a tabela:
 
-| Recursos         | .Rmd | .Rmarkdown | .md/.markdown |
-
+| Feature          | .Rmd | .Rmarkdown | .md/.markdown |
 | :--------------- | :--- | :--------- | :------------ |
-
-| Run R code       | yes  | yes        | no            |
-
-| Bibliography     | yes  | yes        | no            |
-
-| Cross references | yes  | yes        | no            |
-
-| LaTeX math       | yes  | talvez     | talvez        |
-
-| HTML widgets     | yes  | yes        | no            |
-
+| Run R code       | yes  | yes        | no            |
+| Bibliography     | yes  | yes        | no            |
+| Cross references | yes  | yes        | no            |
+| LaTeX math       | yes  | maybe      | maybe         |
+| HTML widgets     | yes  | yes        | no            |
 Fonte Tabela: [Seção 1.6](https://bookdown.org/yihui/blogdown/output-format.html#output-format)
 
 O erro que estava sendo apresentado era o seguinte:
 
 ```
 1:33:09 PM: $ hugo
-
 1:33:09 PM: Start building sites …
-
 1:33:09 PM: hugo v0.123.6-92684f9a26838a46d1a81e3c250fef5207bcb735+extended linux/amd64 BuildDate=2024-02-28T18:29:40Z VendorInfo=gohugoio
-
 1:33:09 PM: Total in 41 ms
-
 1:33:09 PM: Error: error building site: render: failed to render pages: failed to process "/post/primeiro/index.html": "/tmp/hugo-transform-error2030905505💯40": expected comma character or an array or object ending on line 100 and column 40
-
 1:33:09 PM:    12:     {
-
 1:33:09 PM:            ^
-
 1:33:09 PM: ​
-
 1:33:09 PM: "build.command" failed                                        
-
 1:33:09 PM: ────────────────────────────────────────────────────────────────
-
 1:33:09 PM: ​
-
 1:33:09 PM:   Error message
-
 1:33:09 PM:   Command failed with exit code 1: hugo (https://ntl.fyi/exit-code-1)
-
 1:33:09 PM: ​
-
 1:33:09 PM:   Error location
-
 1:33:09 PM:   In build.command from netlify.toml:
-
 1:33:09 PM:   hugo
-
 1:33:09 PM: ​
-
 1:33:09 PM:   Resolved config
-
 1:33:09 PM:   build:
-
 1:33:09 PM:     command: hugo
-
 1:33:09 PM:     commandOrigin: config
-
 1:33:09 PM:     environment:
-
 1:33:09 PM:       - HUGO_VERSION
-
 1:33:09 PM:       - HUGO_ENV
-
 1:33:09 PM:     publish: /opt/build/repo/public
-
 1:33:09 PM:     publishOrigin: config
-
-1:33:09 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
-
+1:33:09 PM: Build failed due to a user error: Build script returned non-zero exit code:2
 1:33:09 PM: Failing build: Failed to build site
-
 1:33:09 PM: Finished processing build request in 21.679s
-
 1:33:09 PM: Failed during stage "building site": Build script returned non-zero exit code: 2´
 ```
 
