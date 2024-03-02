@@ -42,7 +42,7 @@ params:
   showtoc: false
   tocopen: false
   mainSections:
-    - posts
+    - post
     - docs
 
   assets:
