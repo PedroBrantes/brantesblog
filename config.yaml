@@ -30,7 +30,6 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-  CanonicalLinkText: "Via:"
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: false
