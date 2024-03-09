@@ -50,6 +50,13 @@ params:
     - post
     - docs
   displayFullLangName: true
+  giscus:
+    repo: "PedroBrantes/brantesblog"
+    repoID: "R_kgDOLaDH5A"
+    category: "Blog comments"
+    categoryID: "DIC_kwDOLaDH5M4Cdq9x"
+    mapping: "pathname"
+    inputPosition: "bottom"
 
   assets:
     # disableHLJS: true # to disable highlight.js
