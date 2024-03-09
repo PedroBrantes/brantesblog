@@ -4,8 +4,6 @@ paginate: 5
 theme: "hugo-PaperMod"
 DefaultContentLanguage: "pt"
 
-math: true
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -50,6 +48,7 @@ params:
     - post
     - docs
   displayFullLangName: true
+  math: true
   giscus:
     repo: "PedroBrantes/brantesblog"
     repoID: "R_kgDOLaDH5A"
@@ -108,7 +107,7 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: G-EN3NYW3838
+      SiteVerificationTag: agXKaS_TKb9A2lI2QD0IlEHoM1H926PmLRa1GrUcF5Q
     bing:
       SiteVerificationTag: G-EN3NYW3838
     yandex:
