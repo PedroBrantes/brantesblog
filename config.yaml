@@ -104,6 +104,8 @@ params:
       url: "https://linkedin.com/in/brantes/"
     - name: email
       url: "mailto:"
+    - name: googlecalendar
+      url: "https://calendar.app.google/oHwcsc8NneQiEKjG8"
 
   analytics:
     google:
